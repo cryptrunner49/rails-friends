@@ -1,24 +1,50 @@
-# README
+# Friends app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project Details
 
-Things you may want to cover:
+Ruby on Rails friends app.
 
-* Ruby version
+![Preview](doc/img/preview.png)
 
-* System dependencies
+## System Requirements
 
-* Configuration
+* Ruby 3.3.6
+* Rails 8.0.1
 
-* Database creation
+## Running
+```bash
+git clone https://github.com/cryptrunner49/rails-friends
+cd rails-friends
+rails db:migrate
+rails server
+```
 
-* Database initialization
+## Running with docker or podman
+### docker
+```bash
+git clone https://github.com/cryptrunner49/rails-friends
+cd rails-friends
+sudo docker build -t rails-friends .
+sudo docker run -d -p 127.0.0.1:3000:3000 rails-friends
+```
+### podman
+```bash
+git clone https://github.com/cryptrunner49/rails-friends
+cd rails-friends
+podman build -t rails-friends .
+podman run -d -p 127.0.0.1:3000:3000 rails-friends
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Running with docker compose or podman-compose
+### docker compose
+```bash
+git clone https://github.com/cryptrunner49/rails-friends
+cd rails-friends
+sudo docker compose up
+```
+### podman-compose
+```bash
+git clone https://github.com/cryptrunner49/rails-friends
+cd rails-friends
+podman-compose up
+```
